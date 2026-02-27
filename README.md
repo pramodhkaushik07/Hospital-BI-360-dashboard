@@ -168,30 +168,6 @@ Status Icon =
 | Null dashboard states | `Forced Selection` enabled on critical slicers to prevent empty visual states |
 | Relationship integrity | All relationships directed Many-to-One toward `Patient Info` master table |
 
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
-- MySQL Server + [MySQL Connector for Power BI](https://dev.mysql.com/downloads/connector/net/) *(optional — Excel source works standalone)*
-
-### Setup Instructions
-
-**Option A — Excel Only (Recommended for Quick Start)**
-1. Clone this repository
-2. Open `Hospital_Dashboard.pbix` in Power BI Desktop
-3. Go to **Home → Transform Data → Manage Parameters**
-4. Update the `File Path` parameter to your local folder path
-5. Click **Refresh** — all 16 source queries will update automatically
-
-**Option B — MySQL Backend**
-1. Run the Python uploader script to migrate Excel tables into MySQL:
-   ```bash
-   python excel_uploader.py --host localhost --db hospital_db
-   ```
-2. Open Power BI and update the MySQL `localhost` connection credentials
-3. Refresh the data model
 
 ---
 
